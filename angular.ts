@@ -75,8 +75,6 @@
 </div>
 
 Directives ->
-
- Directive Types	Details
 Attribute --	Used with a template. This type of directive is the most common directive type.
 Attribute -- directives	Change the appearance or behavior of an element, component, or another directive.
 Structural -- directives	Change the DOM layout by adding and removing DOM elements.
