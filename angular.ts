@@ -21,7 +21,6 @@
   }
 
 
-
 // DataBinding
  
 <!-- Interpolation -->
@@ -75,7 +74,29 @@
     </div>
 </div>
 
+Directives ->
 
+ Directive Types	Details
+Attribute --	Used with a template. This type of directive is the most common directive type.
+Attribute -- directives	Change the appearance or behavior of an element, component, or another directive.
+Structural -- directives	Change the DOM layout by adding and removing DOM elements.
+
+ <div class="row">
+    <div class="col-12 text-center">
+        <div class="btn-group">
+            <button type="button" (click)="changeTab('Roles')" class="btn"[ngClass]="currentComponent=='Roles'?'btn-success':'btn-danger'" >Roles</button>
+            <button type="button" (click)="changeTab('Designation')" class="btn"[ngClass]="currentComponent=='Designation'?'btn-success':'btn-danger'"  >Designation</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12" *ngIf="currentComponent=='Roles'">
+        <app-roles></app-roles>
+    </div>
+    <div class="col-12" *ngIf="currentComponent=='Designation'">
+        <app-designation></app-designation>
+    </div>
 
 
 
